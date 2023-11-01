@@ -1,0 +1,439 @@
+:root {
+    --font-family-- : 'Montserrat' ,'sans-serif';
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section {
+    margin-bottom: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    
+}
+
+.js-menu-container {
+    display: flex;
+    height: 700px;
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background-color: #1E1823;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.main-navigation{
+    margin-top: 135px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+ .main-navigation a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: var(--font-family--);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    letter-spacing: -0.28px;
+}
+
+ .main-navigation a:hover {
+    color: #FD9222;
+    cursor: pointer;
+    border-bottom: 1px solid #FD9222;
+    width: fit-content;
+    padding-bottom: 8px;
+    transition: var(--transition);
+}
+
+
+
+.header-social-icons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    gap: 18px;
+    margin: 20px 20px;
+}
+
+.header-social-icons svg{
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.header-social-icons svg:hover  {
+    fill:#FD9222;
+    cursor: pointer;
+}
+
+.js-menu-container .mobile-nav-close-icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    fill: #fff;
+    margin: 20px 20px;
+    
+}
+
+.js-menu-container .js-close-menu:hover {
+    cursor: pointer;
+}
+
+.is-open {
+    display: none;
+}
+
+
+.global-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 98%;
+}
+
+.desktop-header {
+    display: none;
+}
+
+.global-header  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.global-header .header-logo .logo{
+    width:185px ;
+    height: 20px;
+}
+
+.global-header .header-logo .chocolate-logo-icon {
+    width: 21px;
+    height: 21px;
+    fill: none;
+}
+
+.global-header .mobile-opener-icon {
+    width: 32px;
+    height: 32px
+}
+
+.global-header .mobile-opener-icon:hover {
+    cursor: pointer;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../images/main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.main-section .product-advertisement {
+    height: 621px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 32px;
+    color: #fff;
+
+}
+
+.main-section .product-advertisement span {
+    font-family: var(--font-family--);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    font-style:normal;
+    width: 75%;
+
+}
+
+.main-section .product-advertisement .main-div-buttons {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.main-section .product-advertisement .principal-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.main-section .product-advertisement .main-div-buttons button {
+    height: 41px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px ;
+    color: #FFF;
+    font-family: var(--font-family--);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main-section .product-advertisement .principal-buttons>:first-child {
+    width: 120px;
+}
+
+.main-section .product-advertisement .principal-buttons>:last-child {
+    width: 159px;
+}
+
+.main-section .product-advertisement button:hover {
+    background-color: #FD9222;
+    border-color: #FD9222;
+    cursor: pointer;
+} 
+
+.main-section .main-div-buttons .scroll-down:hover a{
+    color:#FD9222 ;
+}
+
+.main-section .scroll-down:hover svg {
+    fill: #FD9222;
+}
+
+
+
+.main-section .scroll-down {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-section .scroll-down a {
+    color: #FFF;
+    font-family: var(--font-family--);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; 
+    letter-spacing: -0.36px;
+    text-decoration: none;
+}
+
+.main-section .scroll-down svg {
+    width:28px ;
+    height: 28px;
+    fill: #fff;
+}
+
+.main-section .scroll-down svg:hover {
+    cursor: pointer;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1823;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    color: #fff;
+    
+}
+
+.about-section .about-section-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 62px;
+    height: 62px;
+}
+
+.about-section svg {
+    width: 32px;
+    height: 32px;
+}
+
+
+ .about-section .about-chocolate,.about-price ,.about-us {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 28px;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+
+.js-menu-container {
+    width: 290px;
+}
+
+.main-section {
+    background-image: url(../images/main-image-t.jpg);
+    background-size: cover;
+}
+
+.main-section .product-advertisement span {
+    font-size: 28px;
+    line-height: 34px;
+    width: 484px;
+}
+
+.main-section .product-advertisement {
+    padding: 40px ;
+}
+
+
+.main-section .main-div-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-section .scroll-down a {
+    font-size: 14px;
+
+}
+
+.main-section .scroll-down svg {
+    width:38px ;
+    height: 38px;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    padding: 50px 32px;
+}
+
+.about-section .scale-divider {
+    width: 308px;
+}
+
+
+
+}
+
+/* TODO: CHANGE FILL COLOR OR SCROLL SVG AND THE TWITTER SVG */
+/* TODO: MAKE NAV STOP MOVING AFTER HOVER */
+
+
+/* Desktop */
+
+@media screen and (min-width : 1158px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .global-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 188px;
+        padding-left: 15px;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .js-open-menu {
+        display: none;
+    }
+
+    .js-menu-container {
+        display: none;
+    }
+
+    .desktop-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+
+    .header-social-icons {
+        position: relative;
+        margin: 0;
+    }
+
+  .header-social-icons svg {
+        fill:#111111;
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .main-navigation a{
+        color: #111111;
+        
+    }
+
+    .main-section {
+        width: 100%;
+        background-image: url(../images/main-image-d.jpg);
+    }
+
+    .about-section {
+        gap: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 50px;
+    }
+
+
+    .about-section .about-chocolate, .about-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .about-section svg {
+        fill: #fff;
+    }
+
+    .about-section .vertical-dash {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        height: 124px;
+    }
+
+}
