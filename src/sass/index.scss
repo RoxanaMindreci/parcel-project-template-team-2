@@ -1,7 +1,8 @@
 @import './common';
 @import './example';
 @import './test';
-root {
+@import "./exceptional-taste";
+:root {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     background-color: #FAFAFA;
