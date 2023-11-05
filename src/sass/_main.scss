@@ -1,16 +1,18 @@
 
+
 .main-section {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url(../images/chocolate-covered-background-m.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 30px;
+    margin-bottom: 72px;
+    margin-top: 14px;
     padding: 20px;
 
     .product-advertisement {
+        background-image: url(../images/chocolate-covered-background-m.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 621px;
         width: 100%;
         display: flex;
@@ -19,6 +21,9 @@
         flex-direction: column;
         gap: 32px;
         color: #fff;
+        border-radius: 30px;
+        padding: 20px;
+        
 
         span {
             font-family: var(--font-family--);
@@ -32,12 +37,14 @@
 
         .scroll-down:hover svg {
                 fill: var( --orange-color);
-                cursor: pointer;
-                
+                cursor: pointer;      
+                transition: var(--transition);
         }
+
 
         .scroll-down:hover a {
             color:var( --orange-color);
+            transition: var(--transition);
         }
 
 
@@ -45,9 +52,12 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            width: fit-content;
 
             a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
                 color: #FFF;
                 font-family: var(--font-family--);
                 font-size: 12px;
@@ -65,6 +75,7 @@
                 width: 38px;
                 height: 38px;
                 fill: #fff;
+
             }
         
 
@@ -75,17 +86,24 @@
             display: flex;
             gap: 32px;
             flex-direction: column;
-
+            width: 100%;
             
 
             .principal-buttons {
                 display: flex;
                 gap: 14px;
 
+                .buy-now-button:hover {
+                    background-color: #fff;
+                    color: var(--orange-color);
+                }
+
                 :hover {
-                    background-color: var( --orange-color);
+                    background-color: #fff;
                     border-color: var( --orange-color);
                     cursor: pointer;
+                    transition: var(--transition);
+                    color: var(--orange-color);
                 } 
         
                 >:first-child {
@@ -116,8 +134,9 @@
                 .buy-now-button {
                     height: 41px;
                     color: #fff;
-                    border: 1px solid #fff;
+                    border: none;
                     border-radius: 100px ;
+                    background-color: var(--orange-color);
                     color: #FFF;
                     font-family: var(--font-family--);
                     font-size: 14px;
@@ -125,6 +144,7 @@
                     font-weight: 600;
                     line-height: normal;
                     width: 120px;
+
                 }
             }
         }
@@ -140,11 +160,15 @@
 @media screen and (min-width : 768px) {
 
 .main-section {
-    background-image: url(../images/chocolate-covered-background-t.png);
-    background-size: cover;
+    padding: 32px;
+    margin-bottom: 50px;
+    margin-top: 24px;
 
     .product-advertisement {
+        background-image: url(../images/chocolate-covered-background-t.png);
+         background-size: cover;
         padding: 40px ;
+        
         span {
             font-size: 28px;
             line-height: 34px;
@@ -183,9 +207,13 @@
     
     .main-section {
         width: 100%;
-        background-image: url(../images/chocolate-covered-background-d.png);
         height: 600px;
-
+        margin-bottom: 72px;
+        margin-top: 32px;
+     
+        .product-advertisement {
+            background-image: url(../images/chocolate-covered-background-d.png);
+        }
     }
 
 
