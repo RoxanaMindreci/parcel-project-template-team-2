@@ -25,7 +25,6 @@ function showReviews() {
     }
 }
 
-
 showReviews();
 
 function currentDiv(n) {
@@ -108,12 +107,45 @@ for (var i = 0; i < productBullets.length; i++) {
     });
 }
 
+/*Slideshow for buy*/
 
-
-
-
-
-
+var slideIndexColleague = 0;
+var numWeights;
+var weightContainers = document.querySelectorAll('.weight-container');
+var bulletsColleague = document.querySelectorAll('.swiper-bullets-buy');
+function showWeights() {
+    var width = window.innerWidth;
+    if (width < 768) {
+        for (var i = 0; i < weightContainers.length; i++) {
+            if (i === slideIndexColleague) {
+                weightContainers[i].style.display = 'flex';
+                bulletsColleague[i].classList.add('active');
+            } else {
+                weightContainers[i].style.display = 'none';
+                bulletsColleague[i].classList.remove('active');
+            }
+        }
+    } else {
+        for (var i = 0; i < weightContainers.length; i++) {
+            weightContainers[i].style.display = 'flex';
+            bulletsColleague[i].classList.add('active');
+        }
+    }
+}
+function currentDiv1(n) {
+    slideIndexColleague = n;
+    showWeights();
+}
+for (var i = 0; i < bulletsColleague.length; i++) {
+    bulletsColleague[i].addEventListener('click', function () {
+        var currentBullet = this;
+        var index = Array.from(bulletsColleague).indexOf(currentBullet);
+        currentDiv1(index);
+    });
+}
+window.addEventListener('resize', function () {
+    showWeights();
+});
 
 
 (() => {
