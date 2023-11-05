@@ -1,17 +1,22 @@
 .our-products-section {
     width: 100%;
-    margin-top: 72px;
+
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
 
     .our-products-container {
-        width: 335px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 335px;
+        padding-left: 20px;
+        padding-right: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         h2 {
             font-family: inherit;
             font-weight: 600;
@@ -22,6 +27,8 @@
             margin: 0;
             padding-bottom: 32px;
         }
+
+
         span {
             color: #fd9222;
         }
@@ -38,7 +45,11 @@
     }
 
     .card {
-        width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+
         height: 364px;
         border: 1px solid #1111111a;
         border-radius: 15px;
@@ -46,12 +57,15 @@
         flex-direction: column;
         background-color: #ffffff;
         text-align: center;
+s
+        justify-content: center;
+
         img {
-            width: 230px;
             height: 201px;
-            padding-left: 20px;
             padding-top: 32px;
         }
+
+
         strong {
             text-transform: uppercase;
             font-family: inherit;
@@ -64,6 +78,7 @@
             padding-top: 8px;
             padding-bottom: 2px;
         }
+
         p {
             font-family: inherit;
             font-weight: 400;
@@ -75,7 +90,12 @@
             margin: 0;
             padding-bottom: 18px;
         }
+
+
         button {
+            margin-left: auto;
+            margin-right: auto;
+
             width: 94px;
             height: 33px;
             border: 1px solid #1111111a;
@@ -86,7 +106,10 @@
             font-size: 14px;
             line-height: 1.307;
             color: var(--dark-font);
-            margin-left: 121px;
+
+            text-align: center;
+            cursor: pointer;
+
         }
     }
 }
@@ -116,6 +139,7 @@
         color: var(--orange-color);
         background-color: var(--orange-color);
     }
+
     .swiper-bullets-products.active {
         color: #fd9222;
         background-color: var(--orange-color);
@@ -131,6 +155,7 @@
         display: flex;
         justify-content: center;
         margin-top: 100px;
+
         h2 {
             padding-bottom: 50px;
         }
@@ -140,11 +165,16 @@
         display: flex;
         flex-direction: row;
         gap: 18px;
+
+
         .card {
             width: 270px;
+
             button {
                 margin-left: 88px;
             }
+
+
             img {
                 padding-left: 10px;
             }
@@ -153,6 +183,7 @@
 
     .swiper-bullets-container-products {
         margin-bottom: 100px;
+
         .swiper-bullets-products:last-child {
             display: none;
         }
@@ -165,12 +196,17 @@
     .our-products-section {
         display: flex;
         justify-content: center;
-        margin-top: 128px;
+
+        margin-top: 64px;
     }
+
     .swiper-bullets-container-products {
         margin-bottom: 128px;
+
         .mobile-3-bullet {
             display: none;
         }
     }
+
 }
+
