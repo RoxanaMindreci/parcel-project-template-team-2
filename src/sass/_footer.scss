@@ -1,7 +1,8 @@
 .container-chocolate-explore {
   width: 100%;
   padding-top: 72px;
-  background-image: url(../images/Subcribe-background-m.png), url(../images/Subcribe-background-m-2x.png);
+  background-image: url(../images/Subcribe-background-m.jpg),
+    url(../images/Subcribe-background-m-2x.jpg);
   background-color: rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover, 2px;
@@ -15,8 +16,8 @@
   gap: 20px;
   align-items: center;
   max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .conteiner-chocolate-first span {
   font-family: inherit;
@@ -45,7 +46,7 @@
 .subscribe {
   width: 128px;
   margin: 0 auto;
-    padding: 12px 28px;
+  padding: 12px 28px;
   border: 1px solid var(--orange-color);
   border-radius: 100px;
   background-color: var(--orange-color);
@@ -63,18 +64,17 @@
   color: var(--orange-color);
   transition: background-color var(--transition), color var(--transition);
 }
-  
+
 .conteiner-footer-chocolate {
   width: 100%;
   height: 460px;
   background-color: var(--dark-background);
   position: relative;
 }
-.conteiner-footer{
+.conteiner-footer {
   max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 .motto {
   display: flex;
@@ -166,12 +166,10 @@ a {
   color: var(--white-font);
 }
 
-
 .nav-link:hover {
   color: var(--orange-color);
   transition: color var(--transition);
 }
-
 
 .icon-contact-container {
   display: flex;
@@ -190,7 +188,7 @@ a {
 .icon-contact-container svg:hover {
   stroke: var(--orange-color);
   fill: var(--dark-background);
-  transition: stroke var(--transition), background-color var(--transition) ;
+  transition: stroke var(--transition), background-color var(--transition);
 }
 
 .modal-subscribe {
@@ -206,7 +204,6 @@ a {
   background-color: #fafafa;
   border: 1px solid #fafafa;
   border-radius: 15px;
- 
 }
 .is-hidden {
   visibility: hidden;
@@ -264,8 +261,8 @@ a {
   color: #4040404d;
   height: 45px;
   box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px #00000008;
-  outline: 1px solid #1111110D;
-border: none;
+  outline: 1px solid #1111110d;
+  border: none;
 }
 .subscribe-form-field button {
   width: 100px;
@@ -291,9 +288,10 @@ border: none;
 @media screen and (min-width: 768px) {
   .container-chocolate-explore {
     width: 100%;
-    
+
     background-image: linear-gradient(#00000033, #00000033),
-      url(../images/Subcribe-background-t.png), url(../images/Subcribe-background-t-2x.png);
+      url(../images/Subcribe-background-t.jpg),
+      url(../images/Subcribe-background-t-2x.jpg);
     background-color: #00000033;
     background-repeat: no-repeat;
     background-size: cover, 2px;
@@ -354,11 +352,10 @@ border: none;
     background-color: var(--dark-background);
     position: relative;
   }
-  .conteiner-footer{
+  .conteiner-footer {
     max-width: 704px;
-      margin-left: auto;
-      margin-right: auto;
-  
+    margin-left: auto;
+    margin-right: auto;
   }
   .motto {
     display: flex;
@@ -383,7 +380,7 @@ border: none;
     line-height: 34px;
     letter-spacing: -0.02em;
   }
-  
+
   .icon-contact-container svg {
     width: 24px;
     height: 24px;
@@ -408,7 +405,7 @@ border: none;
     top: 70px;
     gap: 14px;
   }
-  
+
   .main-nav {
     display: flex;
     flex-direction: row;
@@ -466,7 +463,7 @@ border: none;
     top: 190px;
     left: 40px;
   }
-  
+
   .modal-title-subscribe {
     font-family: inherit;
     font-size: 24px;
@@ -502,7 +499,7 @@ border: none;
     height: 50px;
     width: 260px;
     box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px #00000008;
-    outline: 1px solid #1111110D;
+    outline: 1px solid #1111110d;
     border: none;
     margin-top: 20px;
   }
@@ -531,7 +528,8 @@ border: none;
   .container-chocolate-explore {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../images/Subcribe-background-d.png), url(../images/Subcribe-background-d-2x.png) ;
+      url(../images/Subcribe-background-d.jpg),
+      url(../images/Subcribe-background-d-2x.jpg);
     background-color: rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
     background-size: cover, 2px;
@@ -582,12 +580,11 @@ border: none;
     width: 100%;
     background-color: var(--dark-background);
     position: relative;
-
   }
-  .conteiner-footer{
+  .conteiner-footer {
     max-width: 1136px;
-      margin-left: auto;
-      margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .border {
     width: 1050px;
@@ -599,8 +596,7 @@ border: none;
     display: flex;
     flex-direction: column;
     padding-top: 0px;
-    padding-left: 70%
-    
+    padding-left: 70%;
   }
   .contact-container span {
     font-family: inherit;
@@ -623,7 +619,6 @@ border: none;
     stroke: var(--white-font);
     width: 24px;
     height: 24px;
-   
   }
   .modal-content {
     position: absolute;
@@ -649,24 +644,23 @@ border: none;
     transition-duration: 5ms;
   }
   .subscribe-form-field button {
-  width: 120px;
-  height: 45px;
-  border-radius: 100px;
-  border: 1.5px solid #1111110d;
-  background-color: var(--orange-color);
-  position: absolute;
-  top: 63%;
-  left: 95%;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: var(--white-font);
-  cursor: pointer;
-  
-}
+    width: 120px;
+    height: 45px;
+    border-radius: 100px;
+    border: 1.5px solid #1111110d;
+    background-color: var(--orange-color);
+    position: absolute;
+    top: 63%;
+    left: 95%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--white-font);
+    cursor: pointer;
+  }
   .subscribe-form {
     display: flex;
     flex-direction: column;
@@ -674,5 +668,4 @@ border: none;
     top: 190px;
     left: 40px;
   }
-  
 }
