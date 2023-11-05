@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 72px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
@@ -11,7 +10,7 @@
 }
 
 .flavour-container {
-    max-width: 335px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,7 +62,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 335px;
+        width: 100%;
         height: 270px;
         border: 1px solid var(--orange-color);
         border-radius: 15px;
@@ -94,7 +93,9 @@
     color: var(--dark-font);
 }
 
-.dark {color:#111111;}
+.dark {
+    color: #111111;
+}
 
 .front-picture {
     color: var(--white-font);
@@ -125,7 +126,7 @@
     color: var(--dark-font);
     background-color: var(--white-font);
     position: absolute;
-    width: 335px;
+    width: 100%;
     height: 270px;
     border-radius: 15px;
     backface-visibility: hidden;
@@ -164,12 +165,11 @@
         cursor: pointer;
         font-family: inherit;
         font-size: 10px;
-
     }
-        p {
-            margin-bottom: 28px;
-        }
 
+    p {
+        margin-bottom: 28px;
+    }
 }
 
 .active-btn {
@@ -182,13 +182,11 @@
 }
 
 
-
 /*tablet*/
 
 @media screen and (min-width:768px) {
 
     .flavour-section {
-        width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -197,7 +195,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 704px;
         gap: 32px;
     }
 
@@ -219,7 +216,6 @@
 
         p {
             text-align: center;
-
             height: 72px;
             margin: 0;
         }
@@ -237,8 +233,6 @@
     }
 
     .background-details {
-        width: 100%;
-        height: 100%;
         padding: 20px;
     }
 
@@ -246,132 +240,125 @@
         .bg-details {
             padding: 0;
         }
+    }
+}
 
-            
-            ul {
-                width: 100%;
-            }
 
+
+/* desktop */
+
+@media screen and (min-width:1158px) {
+
+    .flavour-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .flavour-container {
+        display: flex;
+        max-width: 1136px;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .description {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        height: 156px;
+
+
+        h2 {
+            width: 411;
+            height: 56px;
+            margin-top: 0;
+            margin-bottom: 28px;
+        }
+
+        p {
+            text-align: center;
+            width: 486px;
+            height: 72px;
+            margin: 0;
         }
     }
 
-
-
-
-    /* desktop */
-
-    @media screen and (min-width:1158px) {
-
-        .flavour-section {
-            padding-top: 128px;
-            padding-bottom: 64px;
-            width: 100%;
-        }
-
-        .flavour-container {
-            display: flex;
-            max-width: 1136px;
-            flex-direction: row;
-            margin-left: auto;
-            margin-right: auto;
-            gap: 18px;
-        }
-
-        .description {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-
-            height: 156px;
-
-
-            h2 {
-                width: 411;
-                height: 56px;
-                margin-top: 0;
-                margin-bottom: 28px;
-            }
-
-            p {
-                text-align: center;
-                width: 486px;
-                height: 72px;
-                margin: 0;
-            }
-        }
-
-
-        .card-taste {
-            width: 270px;
-            height: 270px;
-            margin-bottom: 0;
-
-            .front-detail {
-                width: 270px;
-                height: 270px;
-            }
-
-            .background-details {
-                width: 270px;
-                height: 270px;
-                padding: 20px;
-                margin: 0;
-
-                ul:first-child {
-                    margin-right: 6px;
-                }
-
-                .bg-details {
-                    padding: 0;
-                }
-            }
-        }
-
-        .front-picture {
-            img {
-                width: 206;
-                height: 160;
-            }
-
-            h2 {
-                margin-left: 28px;
-                margin-bottom: 28px;
-                margin-top: 0;
-            }
-        }
-    }
-
-    /* animatia*/
 
     .card-taste {
-        transform-style: preserve-3d;
-        perspective: 800px;
-    }
+        width: 270px;
+        height: 270px;
+        margin-bottom: 0;
 
-    .front-detail,
-    .background-details {
-        backface-visibility: hidden;
-        transform-style: preserve-3d;
-        transition: transform .8s ease-in-out;
-    }
+        .front-detail {
+            width: 270px;
+            height: 270px;
+        }
 
-    .card-taste:hover .front-detail {
-        transform: rotateY(180deg)
-    }
+        .background-details {
+            width: 270px;
+            height: 270px;
+            padding: 20px;
+            margin: 0;
 
-    .card-taste:hover .background-details {
-        transform: rotateY(0)
+            ul:first-child {
+                margin-right: 6px;
+            }
+
+            .bg-details {
+                padding: 0;
+            }
+        }
     }
 
     .front-picture {
-        transform: translateZ(100px) scale(.86);
-    }
+        img {
+            width: 206;
+            height: 160;
+        }
 
-    .background-details {
-        transform: rotateY(180deg);
+        h2 {
+            margin-left: 28px;
+            margin-bottom: 28px;
+            margin-top: 0;
+        }
     }
+}
 
-    .bg-details {
-        transform: translateZ(100px) scale(.86);
-    }
+/* animatia*/
+
+.card-taste {
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.front-detail,
+.background-details {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform .8s ease-in-out;
+}
+
+.card-taste:hover .front-detail {
+    transform: rotateY(-180deg)
+}
+
+.card-taste:hover .background-details {
+    transform: rotateY(0)
+}
+
+.front-picture {
+    transform: translateZ(100px) scale(.86);
+}
+
+.background-details {
+    transform: rotateY(180deg);
+}
+
+.bg-details {
+    transform: translateZ(100px) scale(.86);
+}
