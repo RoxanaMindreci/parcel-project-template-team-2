@@ -54,6 +54,10 @@
             gap: 12px;
 
             a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
                 color: #FFF;
                 font-family: var(--font-family--);
                 font-size: 12px;
@@ -82,18 +86,24 @@
             display: flex;
             gap: 32px;
             flex-direction: column;
-
+            width: 100%;
             
 
             .principal-buttons {
                 display: flex;
                 gap: 14px;
 
+                .buy-now-button:hover {
+                    background-color: #fff;
+                    color: var(--orange-color);
+                }
+
                 :hover {
-                    background-color: var( --orange-color);
+                    background-color: #fff;
                     border-color: var( --orange-color);
                     cursor: pointer;
                     transition: var(--transition);
+                    color: var(--orange-color);
                 } 
         
                 >:first-child {
@@ -124,8 +134,9 @@
                 .buy-now-button {
                     height: 41px;
                     color: #fff;
-                    border: 1px solid #fff;
+                    border: none;
                     border-radius: 100px ;
+                    background-color: var(--orange-color);
                     color: #FFF;
                     font-family: var(--font-family--);
                     font-size: 14px;
@@ -133,6 +144,7 @@
                     font-weight: 600;
                     line-height: normal;
                     width: 120px;
+
                 }
             }
         }
