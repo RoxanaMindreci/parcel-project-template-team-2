@@ -1,5 +1,6 @@
 .our-products-section {
     width: 100%;
+
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -27,6 +28,7 @@
             padding-bottom: 32px;
         }
 
+
         span {
             color: #fd9222;
         }
@@ -43,8 +45,10 @@
     }
 
     .card {
+
         margin-left: auto;
         margin-right: auto;
+
 
         height: 364px;
         border: 1px solid #1111111a;
@@ -53,12 +57,14 @@
         flex-direction: column;
         background-color: #ffffff;
         text-align: center;
+s
         justify-content: center;
 
         img {
             height: 201px;
             padding-top: 32px;
         }
+
 
         strong {
             text-transform: uppercase;
@@ -85,9 +91,11 @@
             padding-bottom: 18px;
         }
 
+
         button {
             margin-left: auto;
             margin-right: auto;
+
             width: 94px;
             height: 33px;
             border: 1px solid #1111111a;
@@ -98,8 +106,10 @@
             font-size: 14px;
             line-height: 1.307;
             color: var(--dark-font);
+
             text-align: center;
             cursor: pointer;
+
         }
     }
 }
@@ -156,12 +166,14 @@
         flex-direction: row;
         gap: 18px;
 
+
         .card {
             width: 270px;
 
             button {
                 margin-left: 88px;
             }
+
 
             img {
                 padding-left: 10px;
@@ -184,6 +196,7 @@
     .our-products-section {
         display: flex;
         justify-content: center;
+
         margin-top: 64px;
     }
 
@@ -194,4 +207,6 @@
             display: none;
         }
     }
+
 }
+
