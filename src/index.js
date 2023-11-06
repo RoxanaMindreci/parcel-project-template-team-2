@@ -159,10 +159,6 @@ window.addEventListener('resize', function () {
         openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
         mobileMenu.classList.toggle('is-open');
 
-        const scrollLockMethod = !isMenuOpen
-            ? 'disableBodyScroll'
-            : 'enableBodyScroll';
-        bodyScrollLock[scrollLockMethod](document.body);
     };
 
     openMenuBtn.addEventListener('click', toggleMenu);
@@ -173,11 +169,18 @@ window.addEventListener('resize', function () {
         if (!e.matches) return;
         mobileMenu.classList.remove('is-open');
         openMenuBtn.setAttribute('aria-expanded', false);
-        bodyScrollLock.enableBodyScroll(document.body);
     });
 })();
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 
 (() => {
@@ -192,7 +195,6 @@ window.addEventListener('resize', function () {
     const openModalBtnBuy = document.querySelector("[data-modal-open-buy]");
     const closeModalBtnBuy = document.querySelector("[data-modal-close-buy]");
     const modalBuy = document.querySelector("[data-modal-buy]");
-
 
     openModalBtnReviews.addEventListener("click", toggleModal.bind(null, modalReviews));
     closeModalBtnReviews.addEventListener("click", toggleModal.bind(null, modalReviews));
