@@ -47,19 +47,19 @@
                     <span>Personal information</span>
                     <div class="name-container">
                         <div class="input-container">
-                            <input class="text-field" type="text" name="name" id="name" required placeholder="Name" />
+                            <input class="text-field" type="text" name="name" id="name" required placeholder="Name" autocomplete="given-name"/>
                         </div>
 
                         <div class="input-container">
                             <input class="text-field" type="text" name="name" id="surname" required
-                                placeholder="Surname" />
+                                placeholder="Surname" autocomplete="family-name"/>
                         </div>
                     </div>
                     <div class="details-container">
                         <span>Email</span>
                         <div class="input-container">
                             <input class="text-field" type="email" name="email" id="email" required
-                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your email" />
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your email" autocomplete="email"/>
                         </div>
                     </div>
 
@@ -67,11 +67,11 @@
                         <span>Phone number</span>
                         <div class="input-container">
                             <input class="text-field phone-flag" type="tel" name="phone-number" id="phone-number"
-                                required placeholder="Phone number" />
+                                required placeholder="Phone number" autocomplete="on"/>
 
                             <div class="flag-nr">
 
-                                <img src="./images/flag.png" alt="flag" width="31.589" height="23.508" />
+                                <img src="./images/flag.png" alt="flag" width="31" height="23" />
                                 <span class="nr">+380</span>
                                 <span class="vertical-line"></span>
                             </div>

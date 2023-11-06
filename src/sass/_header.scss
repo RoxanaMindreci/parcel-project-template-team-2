@@ -1,85 +1,109 @@
-
-.js-menu-container  {
+.js-menu-container {
     display: none;
 }
 
-.is-open {
+.js-menu-container.is-open {
     display: flex;
     height: 700px;
     position: fixed;
     width: 220px;
     height: 100%;
     background-color: var(--dark-background);
-    right: 0;
     top: 0;
+    right: 0;
+    z-index: 1;
 
-        .js-close-menu:hover {
-            cursor: pointer;
-        }
+    .js-close-menu:hover {
+        cursor: pointer;
+    }
 
-        .mobile-nav-close-icon {
-            width: 28px;
-            height: 28px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            fill: #fff;
-            margin: 20px 20px;
-         }
+    .mobile-nav-close-icon {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        fill: var(--white-font);
+        margin: 20px 20px;
+    }
 
-        .main-navigation{
+    .main-navigation {
 
-            a {
-                text-decoration: none;
-                color: #FFF;
-                font-family: var(--font-family--);
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 16px; 
-                letter-spacing: -0.28px;
-            }
-
-            :hover {
-                color: var( --orange-color);
-                cursor: pointer;
-                border-bottom: 1px solid var( --orange-color);
-                width: fit-content;
-                padding-bottom: 8px;
-                transition: var(--transition);
-            }
-
-            
-
-            margin-top: 135px;
-            margin-left: 50px;
+        ul {
+            list-style: none;
             display: flex;
             flex-direction: column;
             gap: 24px;
+            margin: 0;
+            padding: 0;
         }
 
-        .header-social-icons {
-            
+        a {
+            text-decoration: none;
+            color: var(--white-font);
+            font-family: var(--font-family--);
+            font-size: inherit;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.28px;
+            transition: color var(--transition);
+            cursor: pointer;
+            padding-bottom: 10px;
+            position: relative;
+        }
 
-            svg {
-                width: 24px;
-                height: 24px;
-                fill: #fff;
-            }
+        :hover,
+        :focus {
+            color: var(--orange-color);
+        }
 
-            svg:hover {
-                fill:var( --orange-color);
-                cursor: pointer;
-                transition: var(--transition);
-            }
+        :active {
+            color: var(--orange-color);
+        }
 
-            display: flex;
+        a:hover::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: var(--orange-color);
             position: absolute;
             bottom: 0;
-            left: 0;
-            gap: 18px;
-            margin: 20px 20px;
+            right: 0;
+            transition: background-color var(--transition);
+
         }
+
+        margin-top: 135px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .header-social-icons {
+
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--white-font);
+            transition: fill var(--transition);
+        }
+
+        svg:hover {
+            fill: var(--orange-color);
+            cursor: pointer;
+
+        }
+
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        gap: 18px;
+        margin: 20px 20px;
+    }
 }
 
 
@@ -105,8 +129,8 @@
         align-items: center;
         gap: 4px;
 
-        .logo{
-            width:185px ;
+        .logo {
+            width: 185px;
             height: 20px;
         }
 
@@ -125,16 +149,16 @@
     .mobile-opener-icon:hover {
         cursor: pointer;
     }
-    
+
 }
 
 
 /* Tablet */
 
 @media screen and (min-width: 768px) {
-
-
-
+    .js-menu-container {
+        display: none;
+    }
 }
 
 
@@ -158,83 +182,83 @@
 
         .mobile-header {
             display: none;
-            }
-            
+        }
+
         .desktop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .main-navigation {
+
                 display: flex;
+                gap: 24px;
+                justify-content: center;
                 align-items: center;
-                justify-content: space-between;
-                width: 100%;
 
-                .main-navigation{
+                .current {
+                    color: var(--orange-color);
+                }
 
-                    display: flex;
-                    gap: 24px;
-                    justify-content: center;
-                    align-items: center;
+                a {
+                    text-decoration: none;
+                    color: #111111;
+                    font-family: var(--font-family--);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: -0.28px;
+                    position: relative;
+                    cursor: pointer;
+                    transition: color var(--transition);
+                    padding-bottom: 8px;
+                }
 
-                    a {
-                        text-decoration: none;
-                        color: #111111;
-                        font-family: var(--font-family--);
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 16px; 
-                        letter-spacing: -0.28px;
-                        position: relative;
-                       
-                    }
-        
-                    a:hover {
-                        color: var( --orange-color);
-                        cursor: pointer;
-                        width: fit-content;
-                        padding-bottom: 8px;
-                        transition: var(--transition);
-                    }
-                    
-                    a:after {
-                        content: '';
-                        height: 2px;
-                        background: var( --orange-color);
-                        border-radius: 10px;
-                        position:absolute;
-                        bottom: -5px;
-                        right: 0%;
-                        transition: var(--transition);
-                    }
+                a:hover,
+                a:active {
+                    color: var(--orange-color);
+                }
 
-                    a:hover:after {
-                        width: 100%;
-                        left: 0%;
-                    }
-                    
+                .current::after {
+                    content: '';
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--orange-color);
+                    border-radius: 2px;
+                    position: absolute;
+                    bottom: -5px;
+                    right: 0%;
+                    transition: background-color var(--transition);
 
                 }
 
-                .header-social-icons {
 
-                    display: flex;
-                    gap: 18px;
+            }
 
-                    svg {
-                        width: 24px;
-                        height: 24px;
-                        fill: rgba(17, 17, 17, 0.6);
-                    }
-        
-                    svg:hover {
-                        fill:var( --orange-color);
-                        cursor: pointer;
-                        transition: var(--transition);
-                    }
-        
+            .header-social-icons {
+
+                display: flex;
+                gap: 18px;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    fill: rgba(17, 17, 17, 0.6);
+                    transition: fill var(--transition);
+                }
+
+                svg:hover {
+                    fill: var(--orange-color);
+                    cursor: pointer;
                 }
 
             }
-            
-        
+
+        }
+
+
     }
 
     .js-open-menu {
@@ -247,7 +271,7 @@
 
 
     .header-social-icons svg {
-        fill:#111111;
+        fill: var(--dark-font);
     }
 
 }

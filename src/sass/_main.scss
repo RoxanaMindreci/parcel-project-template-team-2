@@ -18,7 +18,7 @@
     justify-content: flex-end;
     flex-direction: column;
     gap: 32px;
-    color: #fff;
+    color: var(--white-font);
     border-radius: 30px;
     padding: 20px;
 
@@ -32,15 +32,19 @@
       width: 75%;
     }
 
+
+
+    .scroll-down:hover .circle-scroll {
+      background-color: var(--orange-color);
+    }
+
     .scroll-down:hover svg {
-      fill: var(--orange-color);
+      fill: var(--white-font);
       cursor: pointer;
-      transition: var(--transition);
     }
 
     .scroll-down:hover a {
       color: var(--orange-color);
-      transition: var(--transition);
     }
 
     .scroll-down {
@@ -53,20 +57,33 @@
         justify-content: center;
         align-items: center;
         gap: 12px;
-        color: #fff;
-        font-family: var(--font-family--);
+        color: var(--white-font);
+        font-family: inherit;
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 14px;
         letter-spacing: -0.36px;
         text-decoration: none;
+        transition: color var(--transition);
       }
 
       svg {
+        width: 22px;
+        height: 22px;
+        fill: var(--orange-color);
+        transition: fill var(--transition);
+      }
+
+      .circle-scroll {
         width: 38px;
         height: 38px;
-        fill: #fff;
+        border-radius: 50%;
+        background-color: var(--white-font);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color var(--transition);
       }
     }
 
@@ -81,12 +98,12 @@
         gap: 14px;
 
         .buy-now-button:hover {
-          background-color: #fff;
+          background-color: var(--white-font);
           color: var(--orange-color);
         }
 
         :hover {
-          background-color: #fff;
+          background-color: var(--white-font);
           border-color: var(--orange-color);
           cursor: pointer;
           transition: var(--transition);
@@ -104,30 +121,34 @@
         button {
           height: 41px;
           background-color: transparent;
-          color: #fff;
-          border: 1px solid #fff;
+          color: var(--white-font);
+          border: 1px solid var(--white-font);
           border-radius: 100px;
-          color: #fff;
+          color: var(--white-font);
           font-family: var(--font-family--);
           font-size: 14px;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
+          transition: background-color var(--transition),
+            border var(--transition), color var(--transition);
         }
 
         .buy-now-button {
           height: 41px;
-          color: #fff;
+          color: var(--white-font);
           border: none;
           border-radius: 100px;
           background-color: var(--orange-color);
-          color: #fff;
+          color: var(--white-font);
           font-family: var(--font-family--);
           font-size: 14px;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
           width: 120px;
+          transition: background-color var(--transition),
+            border var(--transition), color var(--transition);
         }
       }
     }
@@ -165,8 +186,8 @@
           }
 
           svg {
-            width: 38px;
-            height: 38px;
+            width: 22px;
+            height: 22px;
           }
         }
       }
