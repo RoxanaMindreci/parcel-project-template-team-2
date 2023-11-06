@@ -79,6 +79,12 @@ width: 100%;
                 cursor: pointer;
                 border: none;
             }
+
+            button:hover {
+                background-color: #fff;
+                color: var(--orange-color);
+                border: 1px solid var(--orange-color);
+            }
         }
                 
     }
@@ -106,8 +112,7 @@ width: 100%;
         width: 85%;
         background-color: #fff;
         position: fixed;
-        // padding-left: 24px;
-        // padding-right: 24px;
+        padding: 32px 24px;
         background: #FAFAFA;
         flex-shrink: 0;
         margin: 0;
@@ -446,7 +451,7 @@ width: 100%;
 
 
      .modal-content-buy {
-         width: 70%;
+         width: 609px;
          background-color: #fff;
          position: fixed;
         //  padding-left: 24px;
