@@ -9,6 +9,14 @@
 
   .product-advertisement {
     background-image: url(../images/chocolate-covered-background-m.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../images/chocolate-covered-background-m-2x.jpg);
+    }
+}
     background-repeat: no-repeat;
     background-size: cover;
     height: 621px;
@@ -170,6 +178,13 @@
 
     .product-advertisement {
       background-image: url(../images/chocolate-covered-background-t.jpg);
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .box {
+        background-image: url(../images/chocolate-covered-background-t-2x.jpg);
+      }
       background-size: cover;
       padding: 40px;
 
@@ -199,6 +214,7 @@
     }
   }
 }
+}
 
 // Desktop
 
@@ -210,7 +226,31 @@
     margin-top: 32px;
 
     .product-advertisement {
+
+      padding:40px;
+
+      .main-div-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      span {
+        width: 484px;
+      }
+    }
+ 
+
+    .product-advertisement {
       background-image: url(../images/chocolate-covered-background-d.jpg);
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .box {
+        background-image: url(../images/chocolate-covered-background-d-2x.jpg);
+      }
     }
   }
+}
 }

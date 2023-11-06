@@ -205,6 +205,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     openModalBtnBuy.addEventListener("click", toggleModal.bind(null, modalBuy));
     closeModalBtnBuy.addEventListener("click", toggleModal.bind(null, modalBuy));
 
+    const openModalBtnBuyMain = document.querySelector("[data-modal-open-buy-main]");
+    const closeModalBtnBuyMain = document.querySelector("[data-modal-close-buy-main]");
+    const modalBuyMain = document.querySelector("[data-modal-buy-main]");
+
+    openModalBtnBuyMain.addEventListener("click", toggleModal.bind(null, modalBuy));
+    closeModalBtnBuyMain.addEventListener("click", toggleModal.bind(null, modalBuy));
+
     function toggleModal(modal) {
         modal.classList.toggle("is-hidden");
     }
