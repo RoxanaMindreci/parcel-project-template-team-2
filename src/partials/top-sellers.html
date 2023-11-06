@@ -4,46 +4,48 @@
     <div class=" top-sellers-section">
         <h2><span>TOP</span>SELLERS</h2>
         <div class="top-sellers-container">
-            <ul>
-                <div class="img-mobile-sellers">
-                    <li>
-                        <picture>
-                            <source media="(min-width:1158px)"
-                                scrset="./images/top-sellers-d.jpg, ./images/top-sellers-d-2x.jpg 2x" />
-                            <source media="(min-width:768px)"
-                                scrset="./images/top-sellers-t.jpg 1x, ./images/top-sellers-t-2x.jpg" />
-                            <source scrset="./images/top-sellers-m.jpg 1x, ./images/top-sellers-m-2x.jpg 2x" />
-                            <img src="./images/top-sellers-m.jpg" alt="coffee beans" />
-                        </picture>
+            <ul class="img-mobile-sellers">
 
-                        <p class="mobile-text">Crazy enough chocolate originates from a bean just like the coffee bean
-                            called Cacao. Cacao has
-                            been
-                            around
-                            for
-                            thousands of years and was first discovered by the Native American tribe called the Mayans.
-                        </p>
-                    </li>
-                    <li>
-                        <picture class=" top-sellers-2">
-                            <source media="(min-width:1158px)"
-                                scrset="./images/top-sellers-2-d.jpg, ./images/top-sellers-2-d-2x.jpg 2x" />
-                            <source media="(min-width:768px)"
-                                scrset="./images/top-sellers-2-t.jpg 1x, ./images/top-sellers-2-t-2x.jpg" />
-                            <source scrset="../images/top-sellers-2-m.jpg 1x, ./images/top-sellers-2-m-2x.jpg 2x" />
-                            <img src="./images/top-sellers-2-m.jpg" alt="chocolate pyramid" />
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source media="(min-width:1158px)"
-                                scrset="./images/top-sellers-3-d.jpg, ./images/top-sellers-3-d-2x.jpg 2x" />
-                            <source media="(min-width:768px)"
-                                scrset="./images/top-sellers-3-t.jpg 1x, ./images/top-sellers-3-t-2x.jpg" />
-                            <img class="desktop-image" src="./images/top-sellers-3-d.jpg" alt="chocolate pyramid 2" />
-                        </picture>
-                    </li>
-                </div>
+                <li>
+                    <picture>
+                        <source media="(min-width:1158px)"
+                            scrset="./images/top-sellers-d.jpg, ./images/top-sellers-d-2x.jpg 2x" />
+                        <source media="(min-width:768px)"
+                            scrset="./images/top-sellers-t.jpg 1x, ./images/top-sellers-t-2x.jpg" />
+                        <source scrset="./images/top-sellers-m.jpg 1x, ./images/top-sellers-m-2x.jpg 2x" />
+                        <img src="./images/top-sellers-m.jpg" alt="coffee beans" />
+                    </picture>
+
+                    <p class="mobile-text">Crazy enough chocolate originates from a bean just like the coffee bean
+                        called Cacao. Cacao has
+                        been
+                        around
+                        for
+                        thousands of years and was first discovered by the Native American tribe called the Mayans.
+                    </p>
+                </li>
+                <li>
+                    <picture class=" top-sellers-2">
+                        <source media="(min-width:1158px)"
+                            scrset="./images/top-sellers-2-d.jpg, ./images/top-sellers-2-d-2x.jpg 2x" />
+                        <source media="(min-width:768px)"
+                            scrset="./images/top-sellers-2-t.jpg 1x, ./images/top-sellers-2-t-2x.jpg" />
+                        <source scrset="../images/top-sellers-2-m.jpg 1x, ./images/top-sellers-2-m-2x.jpg 2x" />
+                        <img src="./images/top-sellers-2-m.jpg" alt="chocolate pyramid" />
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source media="(min-width:1158px)"
+                            scrset="./images/top-sellers-3-d.jpg, ./images/top-sellers-3-d-2x.jpg 2x" />
+                        <source media="(min-width:768px)"
+                            scrset="./images/top-sellers-3-t.jpg 1x, ./images/top-sellers-3-t-2x.jpg" />
+                        <img class="desktop-image" src="./images/top-sellers-3-d.jpg" alt="chocolate pyramid 2" />
+                    </picture>
+                </li>
+
+
+
             </ul>
 
             <div class="desktop-design-sellers">
@@ -75,7 +77,7 @@
 
     <div class="modal-buy is-hidden" data-modal-buy>
         <div class="modal-content-buy">
-            <button data-modal-close-buy class="close-btn-buy">
+            <button data-modal-close-buy class="close-btn-buy" title="close-modal-buy">
                 <svg>
                     <use href="./images/symbol-defs.svg#icon-close-btn"></use>
                 </svg>
@@ -130,7 +132,7 @@
                             </div>
 
                             <div class="input-container">
-                                <input class="text-field" type="text" name="name" id="name" required
+                                <input class="text-field" type="text" name="name" id="surname" required
                                     placeholder="Surname" />
                             </div>
                         </div>
