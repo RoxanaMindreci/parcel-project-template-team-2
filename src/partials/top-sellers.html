@@ -128,19 +128,19 @@
                         <div class="name-container">
                             <div class="input-container">
                                 <input class="text-field" type="text" name="name" id="name" required
-                                    placeholder="Name" />
+                                    placeholder="Name" autocomplete="on"/>
                             </div>
 
                             <div class="input-container">
                                 <input class="text-field" type="text" name="name" id="surname" required
-                                    placeholder="Surname" />
+                                    placeholder="Surname" autocomplete="on" />
                             </div>
                         </div>
                         <div class="details-container">
                             <span>Email</span>
                             <div class="input-container">
                                 <input class="text-field" type="email" name="email" id="email" required
-                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your email" />
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your email" autocomplete="on" />
                             </div>
                         </div>
 
@@ -148,7 +148,7 @@
                             <span>Phone number</span>
                             <div class="input-container">
                                 <input class="text-field phone-flag" type="tel" name="phone-number" id="phone-number"
-                                    required placeholder="Phone number" />
+                                    required placeholder="Phone number" autocomplete="on" />
 
                                 <div class="flag-nr">
 
@@ -163,7 +163,7 @@
                             <span>Card number</span>
                             <div class="input-container">
                                 <input class="text-field card-number" name="card-number" id="card-number" required
-                                    placeholder="Enter card" />
+                                    placeholder="Enter card" autocomplete="on" />
                                 <div class="card-nr">
                                     <img src="./images/Mastercard.png" alt="card" width="32" height="21">
                                 </div>
@@ -175,7 +175,7 @@
                         <div class=" details-container">
                             <span>Comment</span>
                             <textarea class="comments-buy-now" name="comments" id="comments-buy-now"
-                                placeholder="Enter text"></textarea>
+                                placeholder="Enter text" autocomplete="off"></textarea>
                         </div>
                         <div class="button-container-modal">
                             <button type="submit" class="button-modal" name="button-submit-modal-buy">Submit</button>
