@@ -85,14 +85,23 @@
 
 }
 
-.conteiner-footer {
+.conteiner-footer-chocolate {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
   gap: 32px;
-  padding: 32px 20px;
+  padding: 50px 32px;
+
+  .conteiner-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 32px;
+    align-items: flex-start;
+
+  }
 }
+
+
 
 .motto {
   width: 280px;
@@ -121,12 +130,10 @@
 }
 
 .contact-container {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  gap: 40px;
 
   .contact {
     display: flex;
@@ -216,6 +223,10 @@ ul {
   padding: 0;
 }
 
+li {
+  padding-bottom: 18px;
+}
+
 .nav-link {
   font-family: inherit;
   font-size: inherit;
@@ -234,10 +245,9 @@ ul {
 
 .modal-subscribe {
   position: fixed;
-  top: 45%;
-  left: 18%;
-  top: 30%;
-  left: 11%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition-duration: 5ms;
 }
 
@@ -246,8 +256,9 @@ ul {
   background-color: #fafafa;
   border: 1px solid #fafafa;
   border-radius: 15px;
-  top: 20%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .is-hidden {
@@ -417,13 +428,17 @@ ul {
   .conteiner-footer-chocolate {
     width: 100%;
     background-color: var(--dark-background);
-
-
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 50px 32px;
 
     .conteiner-footer {
       display: flex;
-      flex-direction: column;
-      padding: 50px 32px;
+      flex-direction: row;
+      padding: 0;
+      justify-content: space-between;
+
     }
 
     .motto {
@@ -452,7 +467,8 @@ ul {
 
 
   .border {
-    width: 90vw;
+    width: 100%;
+
     border: 1px solid #ffffff1a;
   }
 
@@ -488,10 +504,10 @@ ul {
     position: fixed;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     background-color: #0000004d;
-    z-index: 500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -505,8 +521,9 @@ ul {
     border-radius: 15px;
     max-width: 538px;
     width: 100%;
-    top: 20%;
-    left: 15%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
 
   .subscribe-modal-img {
@@ -693,7 +710,7 @@ ul {
   }
 
   .border {
-    width: 90vw;
+
     border: 1px solid #ffffff1a;
 
   }
@@ -702,7 +719,6 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 63px;
-    width: 200px;
   }
 
   .contact-container span {
@@ -726,28 +742,28 @@ ul {
     height: 24px;
   }
 
+
+
+  .modal-subscribe {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #0000004d;
+    transition-duration: 5ms;
+  }
+
   .modal-content {
     position: absolute;
     background-color: #fafafa;
     border: 1px solid #fafafa;
     border-radius: 15px;
     max-width: 538px;
-    top: 30%;
-    left: 30%;
-  }
-
-  .modal-subscribe {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #0000004d;
-    z-index: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 5ms;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
 
   .subscribe-modal-img {
