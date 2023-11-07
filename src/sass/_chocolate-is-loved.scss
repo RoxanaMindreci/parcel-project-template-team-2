@@ -320,6 +320,11 @@
         background-color: #fff;
         color: var(--orange-color);
     }
+    .button-modal:hover,
+    .button-modal:focus {
+        background-color: var(--white-font);
+        color: var(--orange-color);
+    }
 }
 
 @media only screen and (min-width: 768px) {
