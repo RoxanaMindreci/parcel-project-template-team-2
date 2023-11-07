@@ -305,6 +305,11 @@
         font-size: 18px;
         font-weight: 600;
     }
+    .button-modal:hover,
+    .button-modal:focus {
+        background-color: var(--white-font);
+        color: var(--orange-color);
+    }
 }
 
 @media only screen and (min-width: 768px) {
