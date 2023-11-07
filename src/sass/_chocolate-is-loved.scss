@@ -30,6 +30,7 @@
     .reviews-container {
         margin-bottom: 32px;
         margin-top: 32px;
+
         .reviews {
             .reviewer-name {
                 color: var(--dark-font);
@@ -41,13 +42,15 @@
                 margin-top: 18px;
                 margin-bottom: 0;
             }
+
             .review-comment {
                 color: rgba(17, 17, 17, 0.7);
                 text-align: center;
                 font-family: "Montserrat", sans-serif;
                 font-size: 14px;
                 font-weight: 400;
-                line-height: 18px; /* 128.571% */
+                line-height: 18px;
+                /* 128.571% */
                 letter-spacing: -0.28px;
                 margin: 24px 18px 42px 18px;
             }
@@ -64,6 +67,7 @@
             background: #fff;
             box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
         }
+
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -82,6 +86,7 @@
                 color 250ms,
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -95,6 +100,7 @@
         color: var(--orange-color);
         background-color: var(--orange-color);
     }
+
     .swiper-bullets.active {
         color: #fd9222;
         background-color: var(--orange-color);
@@ -117,6 +123,7 @@
                 color 250ms,
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         display: flex;
         justify-content: center;
         margin-bottom: 72px;
@@ -194,7 +201,8 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
-        line-height: 24px; /* 120% */
+        line-height: 24px;
+        /* 120% */
         letter-spacing: -0.6px;
         text-transform: uppercase;
 
@@ -227,6 +235,7 @@
             gap: 8px;
             flex-shrink: 0;
             align-self: stretch;
+
             .vertical-line {
                 border-right: 3px solid rgba(17, 17, 17, 0.05);
                 height: 25px;
@@ -304,6 +313,17 @@
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
         font-weight: 600;
+        transition: color var(--transition), background-color var(--transition);
+    }
+
+    .button-modal:hover {
+        background-color: #fff;
+        color: var(--orange-color);
+    }
+    .button-modal:hover,
+    .button-modal:focus {
+        background-color: var(--white-font);
+        color: var(--orange-color);
     }
 }
 
@@ -311,6 +331,7 @@
     .chocolate-reviews-title {
         padding-top: 100px;
     }
+
     .reviews-container {
         .reviews {
             width: 344px;
@@ -350,6 +371,7 @@
     .review-form {
         .input-container {
             position: relative;
+
             .text-field {
                 width: 100%;
                 height: 66px;
@@ -369,6 +391,7 @@
                 gap: 18px;
                 flex-shrink: 0;
                 align-self: stretch;
+
                 .vertical-line {
                     border-right: 3px solid rgba(17, 17, 17, 0.05);
                     height: 25px;
@@ -390,6 +413,7 @@
     .chocolate-reviews-title {
         padding-top: 128px;
     }
+
     .chocolate-reviews .reviews-container {
         margin-bottom: 50px;
         margin-top: 50px;
@@ -400,7 +424,9 @@
             height: 200px;
         }
     }
+
     .swiper-bullets-container {
+
         .mobile-1-bullet,
         .mobile-2-bullet {
             display: none;
