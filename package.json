@@ -2,16 +2,16 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-   
+    "homepage": "https://andree-ioana.github.io/parcel-project-template-team-2/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./parcel-project-template-team-2",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template-team2/.git"
+    "url": "git+https://github.com/Andree-Ioana/parcel-project-template-team-2.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
