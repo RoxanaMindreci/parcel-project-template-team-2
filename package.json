@@ -2,9 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
+   "homepage": "https://andree-ioana.github.io/parcel-project-template-team-2/",
   "scripts": {
     "start": "parcel src/*.html",
-    "homepage": "https://andree-ioana.github.io/parcel-project-template-team-2/",
+  
     "build": "parcel build src/index.html --public-url /parcel-project-template-team-2/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
